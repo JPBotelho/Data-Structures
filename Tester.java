@@ -4,10 +4,20 @@ import java.util.List;
 import java.util.Arrays;
 public class Tester {
     public static void main(String[] args) {
-        List<Integer> data = Arrays.asList(1, 2, 0, 4, 5, 6, 7, 8);
+        AVLNode tree = new AVLNode(40);
+        tree.insert(30);
+        tree.insert(50);
+        tree.insert(25);
+        tree.insert(35);
+        tree.insert(45);
+        tree.insert(47);
+        tree.insert(60);
+        tree.insert(70);
 
-        BinaryOperator<Integer> minOp = (a, b) -> a+b;
-        SparseTable<Integer> table = new SparseTable<Integer>(data, minOp, false);
-        System.out.println(table.query(0, 5));
+        tree.delete(47);
+        tree.delete(50);
+        //tree.delete(40);
+        System.out.println("finished");
+        //tree.printInOrder();
     }
 }

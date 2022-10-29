@@ -20,3 +20,17 @@ O(n log n) build
 
 O(1) query if queries can overlap
 O(log n) query if queries cannot overlap
+
+## Stuff to do
+
+binary search tree
+red-black tree
+avl tree
+k/d tree
+persistent data structures/trees
+
+Union find
+Tarjan's algorithm for finding Strongly Connected Components
+Topological sorting and DAG relaxation
+Dijkstra's algorithm
+Bellman-ford algorithm
